@@ -1,0 +1,400 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+	font-family: 'Open sans',sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 100%;
+}
+
+header {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/public/img/hero.jpeg);
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 864px;
+	padding: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+header .content {
+	color: white;
+	width: 75%;
+}
+
+.desc {
+	font-size: 22px;
+	line-height: 1.5;
+}
+
+header h1 {
+	text-transform: uppercase;
+	font-size: 4.5em;
+	margin: 10px 0px;
+}
+
+section {
+	margin-bottom: 200px;
+}
+
+.services {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: -83px;
+	margin-right: 60px;
+	margin-left: 60px;
+}
+
+.card {
+	width: 32%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 70px 25px;
+}
+
+.card .desc {
+	text-align: center;
+	margin-top: 5px;
+	font-weight: 100;
+	font-size: 18px;
+}
+
+.card h2 {
+	text-transform: capitalize;
+	font-size: 1.25rem;
+	margin: 20px;
+}
+
+.bg-blue-1 {
+	background-color: #cdd6e4;
+}
+
+.bg-blue-2 {
+	background-color: #d9e1e9;
+}
+
+.bg-grey {
+	background-color: #e4e2e0;
+}
+
+svg {
+	width: 55px;
+	height: 55px;
+}
+
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fbf8f6;
+	padding: 0 60px;
+}
+
+.about .content {
+	width: 60%;
+	padding-right: 60px;
+}
+
+.about .heading {
+	width: 320px;
+}
+
+section h1 {
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+}
+
+section h2 {
+	text-transform: uppercase;
+	font-size: 2.25rem;
+	font-weight: bolder;
+}
+
+.about p {
+	font-size: 22px;
+}
+
+.about a {
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	background-color: #8f7e6d;
+	padding: 15px 40px;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+.about a:visited {
+	color: white;
+}
+
+.about a:hover {
+	background-color: #817162;
+}
+
+.about .thumbnail {
+	width: 40%;
+}
+
+.future {
+	padding: 0 60px;
+	margin-bottom: 50px;
+}
+
+.future .thumbnails {
+	display: grid;
+	grid-template-columns: repeat(3, 372px);
+	grid-template-rows: repeat(2, 372px);
+	grid-gap: 25px;
+}
+
+.future .thumbnails .last {
+	grid-column: 2 / span 2;
+}
+
+.take-your-time {
+	padding: 100px 200px;
+	background-color: #d5d0cc;
+	margin-bottom: 0;
+}
+
+.take-your-time .content {
+	display: flex;
+}
+
+.take-your-time .hr {
+	width: 20%;
+	margin-right: 20px;
+	margin-top: 1em;
+	border-top: 5px solid black;
+}
+
+.take-your-time p {
+	width: 80%;
+	line-height: 1.5;
+	word-spacing: 1px;
+}
+
+.showcase .thumbnails {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(3, 372px);
+	grid-template-rows: repeat(3, 372px);
+	grid-gap: 25px;
+}
+
+.showcase .thumbnails .last {
+	grid-row: 2 / span 2;
+	grid-column: 2 / 3;
+}
+
+.showcase h3 {
+	padding-left: 75px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.companies {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.companies .thumbnails {
+	display: grid;
+	grid-template-columns: repeat(5, 200px);
+	grid-template-rows: 200px;
+}
+
+footer {
+	background-color: #333;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+footer .logo-container {
+	width: 250px;
+	margin-bottom: 20px;
+	align-self: center;
+}
+
+footer .headlines {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+footer hr {
+	margin: 0;
+}
+
+footer .headline {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer h4 {
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+	.future .thumbnails {
+		grid-template-columns: repeat(2, 435px);
+		grid-template-rows: repeat(3, 435px);
+	}
+	.future .thumbnails .last {
+		grid-column: 1 / span 2;
+		grid-row: 2 / span 1;
+	}
+	.showcase .thumbnails {
+		grid-template-columns: repeat(3, 310px);
+		grid-template-rows: repeat(4, 310px);
+	}
+	.showcase .thumbnails .last {
+		grid-column: 1 / span 3;
+		grid-row: 2 / span 1;
+	}
+	.showcase .thumbnails div:nth-child(8) {
+		grid-column: 1 / span 3;
+		grid-row: 4 / span 1;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	header h1 {
+		font-size: 2em;
+	}
+	.future h2 {
+		font-size: 1.6em;
+	}
+	header .content {
+		background-color: rgba(0,0,0,0.30);
+	}
+	.about .content {
+		width: 100%;
+		padding: 0;
+	}
+	.about .thumbnail {
+		display: none;
+	}
+	.services {
+		flex-direction: column;
+		align-items: stretch;
+		margin-right: 60px;
+		margin-left: 60px;
+	}
+	.services .card {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.future .thumbnails {
+		grid-template-columns: repeat(2, 305px);
+		grid-template-rows: repeat(3, 305px);
+	}
+	.take-your-time {
+		padding: 60px;
+	}
+	.take-your-time .content .hr {
+		display: none;
+	}
+	.take-your-time .content p {
+		width: 100%;
+	}
+	.showcase .thumbnails {
+		grid-template-columns: repeat(3, 210px);
+		grid-template-rows: repeat(4, 210px);
+	}
+	.companies {
+		margin-bottom: 100px;
+	}
+	.companies .thumbnails {
+		justify-content: center;
+		grid-template-columns: repeat(3, 200px);
+		grid-template-rows: repeat(2, 200px);
+	}
+	footer .headlines {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	header {
+		padding: 40px;
+		height: 600px;
+	}
+	header .content {
+		width: 100%;
+	}
+	.services {
+		margin: -30px 20px 20px;
+	}
+	.future .thumbnails {
+		grid-template-columns: 305px;
+		grid-template-rows: repeat(5, 305px);
+	}
+	.future .thumbnails .last {
+		grid-column: 1 / span 1;
+	}
+	.take-your-time {
+		padding: 40px;
+	}
+	.showcase .thumbnails {
+		grid-template-columns: 305px;
+		grid-template-rows: repeat(8, 305px);
+	}
+	.showcase .thumbnails .last {
+		grid-column: 1 / span 1;
+		grid-row: 5 / span 1;
+	}
+	.showcase .thumbnails div:nth-child(8) {
+		grid-column: 1 / span 1;
+		grid-row: 8 / span 1;
+	}
+	.companies .thumbnails {
+		grid-template-columns: 200px;
+		grid-template-rows: repeat(5, 200px);
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.services {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	.future {
+		padding: 0;
+	}
+	.future h1, .future h2, .about {
+		padding: 0 30px;
+	}
+	.future .thumbnails {
+		justify-content: center;
+		grid-template-columns: 305px;
+		grid-template-rows: repeat(5, 305px);
+	}
+	.about .heading {
+		width: auto;
+	}
+	.about h2 {
+		font-size: 1.8em;
+	}
+	.take-your-time {
+		padding: 20px;
+	}
+}
